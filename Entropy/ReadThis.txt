@@ -1,0 +1,14 @@
+Project description:
+a platform where a learner can choose a field of interest and gets access to quality resources or choose to be mentored by a professional and is challenged with 5 or more project ideas to complete. Upon completion of these projects a portfolio is created which can be viewed by hirers, thus being awarded a potential client/job.
+
+Content of project directory:
+Files for running the project on a local machine
+A pptx file for presentation
+
+Install node modules:
+npm install
+
+To run on your local machine
+npm run
+
+Few parts of the project are hosted on replit.com , The code of it is in the "replit" folder
