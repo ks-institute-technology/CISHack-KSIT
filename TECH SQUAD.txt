@@ -1,0 +1,10 @@
+DISCRIPTION:
+ 
+
+ALGORITHM VISUALIZATION-This project help students to understand the algorithms like bubble sort,
+linear search,binary search etc very easily and clearly .In addition to the mathematical and empirical 
+analyses of algorithms,there is yet a third way to study algorithms.It is called algorithm visualizer 
+and can be defined as the use of images to convey some useful information about algorithm.That 
+information can be a visual illustration of an algorithm's operation ,of it's performance on different 
+kinds of inputs.To accomplish this goal,an algorithm visualizer uses 3-D bars to represent some 
+intersecting events in algorithm's operation
