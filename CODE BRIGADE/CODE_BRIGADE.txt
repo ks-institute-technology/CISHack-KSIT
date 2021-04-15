@@ -1,0 +1,4 @@
+Idea description: 
+The idea is to create a website which guides student in every path of their education/career.
+The website gives info on Courses available, Competitions, Internships opportunities, etc.
+Our intentions is to give a proper guide to students so that they can excell in their choice of career.
