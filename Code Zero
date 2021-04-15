@@ -1,0 +1,16 @@
+Team mates : 
+Abhishek V  (1KS18EC002)
+Akash R     (1KS18EC006)
+Dheeraj M.S (1KS18EC023)
+Dinesh Kumar Nayak (1KS18EC025)
+
+A web portal for medical care. 
+Seperate windows of patient, doctor, hospital management.
+All are given with unique id and passwords. The patients can fill their details regarding his health condition and can rise ticket for emergency assistance.
+
+Advantages:
+
+Patients need not wait for the docter in waiting line.
+Hospital wont be crowded.
+Online assistance will be provided for patients in emergency.
+Patients can choose the surgen/ doctor required based on the problem.
