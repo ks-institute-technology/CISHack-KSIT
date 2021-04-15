@@ -1,0 +1,11 @@
+The classification of benign and malignant lung nodules has great significance for the early detection of lung cancer, 
+since early diagnosis of nodules can greatly increase patient survival.
+
+we plan to make different models including logistic regression, svm and anns 
+to make predictions about the cancer types: benign (non cancerous) and malignant (cancerous)
+
+The data set has 569 instances or data of 569 tumors 
+and includes data on 30 attributes or features like the radius, texture, perimeter, area, etc. of a tumor.
+ We will be using these features to train our model and predict the target.
+ this model can be further used for early detection of tumours and help several many lives
+
