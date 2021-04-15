@@ -1,0 +1,6 @@
+PIES (Patient Information Exchange System) is a network of 
+hospital information systems that is used for storing and 
+exchanging patient health records between medical institutions 
+and also availing it for patients in the form of a personalized
+app for tracking their medication and appointments.
+
