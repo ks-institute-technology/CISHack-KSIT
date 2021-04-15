@@ -3,7 +3,7 @@
 		We are looking to build a website which is going to have a simple user interface with all the information needed available 
 		at the user’s ﬁngertips.
 		
-		TechFanatic is going to be a website where people come to learn something new and have cool discussions about all the new 
+		TechStop is going to be a website where people come to learn something new and have cool discussions about all the new 
 		developments that are happening anywhere on earth in the field of Tech.
 		In this  website  each post is going to get a separate panel where people can directly talk about the post and share all 
 		the knowledge they have with each other.
