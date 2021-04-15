@@ -9,10 +9,10 @@
 
 ### Team Members: 
 
-1. Abhishek Gowda
+1. [Abhishek Gowda](https://github.com/AbhishekGMV)
 
-2. Ashish Amar
+2. [Ashish Amar](https://github.com/Ashishamar99)
 
-3. Krithika Jagannath
+3. [Krithika Jagannath](https://github.com/krithikajagannath)
 
-4. Meghana Gururaj
+4. [Meghana Gururaj](https://github.com/Meghana-Gururaj)
