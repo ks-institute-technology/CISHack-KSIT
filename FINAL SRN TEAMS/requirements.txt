@@ -1,0 +1,4 @@
+Flask
+Flask-SQLAlchemy
+dialogflow==1.1.0
+
