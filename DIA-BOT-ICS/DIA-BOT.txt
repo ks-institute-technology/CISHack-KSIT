@@ -1,0 +1,191 @@
+#include <LiquidCrystal.h>
+
+// initialize the library with the numbers of the interface pins
+
+LiquidCrystal lcd(A0,A1,A2,A3,A4,A5); //RS,EN,D4,D5,D6,D7
+
+#include <Keypad.h>//header for keypad commands enabling
+
+const byte ROWS = 4; // Four rows
+
+const byte COLS = 4; // Three columns
+
+int M2 = 10;
+
+int M3 = 11;
+
+int M4 = 12;
+
+int M5 = 13;
+
+// Define the Keymap
+
+char keys[ROWS][COLS] = {
+
+  {'1', '2', '3', 'A'},
+
+  {'4', '5', '6', 'B'},
+
+  {'7', '8', '9', 'C'},
+
+  {'#', '0', '*', 'D'}
+
+};
+
+// Connect keypad ROW0, ROW1, ROW2 and ROW3 to these Arduino pins.
+
+byte rowPins[ROWS] = {9,8,7,6};
+
+// Connect keypad COL0, COL1 and COL2 to these Arduino pins.
+
+byte colPins[COLS] = {5,4,3,2};
+
+//  Create the Keypad
+
+Keypad kpd = Keypad( makeKeymap(keys), rowPins, colPins, ROWS, COLS );
+
+void setup()
+
+{
+
+
+
+  lcd.begin(16, 2);
+  pinMode(M2, OUTPUT);
+  pinMode(M3, OUTPUT);
+  pinMode(M4, OUTPUT);
+  pinMode(M5, OUTPUT);
+  digitalWrite(M2,HIGH);
+  digitalWrite(M3,HIGH);
+  digitalWrite(M4,HIGH);
+  digitalWrite(M5,HIGH);
+  //////////////////////////////////////////////////////////////////
+  lcd.setCursor(0, 0); // Sets the cursor to col 0 and row 0
+  lcd.print("HI..Welcome to "); // Prints Sensor Val: to LCD
+  lcd.setCursor(0, 1); // Sets the cursor to col 0 and row 0
+  lcd.print("Diabotics Assist."); // Prints Sensor Val: to LCD
+  delay(3000);
+  lcd.clear();
+
+  //////////////////////////////////////////////////////////////////
+  lcd.setCursor(0, 0); // Sets the cursor to col 0 and row 0
+  lcd.print("press the key"); // Prints Sensor Val: to LCD
+  lcd.setCursor(0, 1); // Sets the cursor to col 0 and row 0
+  lcd.print("  you want  "); // Prints Sensor Val: to LCD
+  delay(3000);
+  lcd.clear();
+  //////////////////////////////////////////////////////////////
+  lcd.setCursor(0, 0); // Sets the cursor to col 0 and row 0
+  lcd.print("1.BSL < 140 mg/dL"); // Prints Sensor Val: to LCD
+  lcd.setCursor(0, 1); // Sets the cursor to col 0 and row 0
+  lcd.print("2.140<BSL>199 mg/dL"); // Prints Sensor Val: to LCD
+  delay(3000);
+  lcd.clear();
+  ///////////////////////////////////////////////////////////////
+  lcd.setCursor(0, 0); // Sets the cursor to col 0 and row 0
+  lcd.print("3.BSL > 200 mg/dL"); // Prints Sensor Val: to LCD
+  lcd.setCursor(0, 1); // Sets the cursor to col 0 and row 0
+  lcd.print("4.Insulin patient"); // Prints Sensor Val: to LCD
+  delay(3000);
+  lcd.clear();
+  ///////////////////////////////////////////////////////////////
+
+  ////////////////////////////////////////////////////////////////////
+  
+  lcd.print("Enter choice =");
+
+
+}
+
+void loop()
+
+{
+
+  char key = kpd.getKey(); //storing pressed key value in a char
+
+  //if (key != NO_KEY)
+  //{
+    switch (key)
+    {
+      case '1':
+
+
+
+
+        lcd.setCursor(14, 0);
+        lcd.print(key);
+        digitalWrite(M2,LOW);
+        delay(10000);//10 sec
+        digitalWrite(M2,HIGH);
+        
+        
+        break;
+      case '2':
+
+        lcd.setCursor(14, 0);
+        lcd.print(key);
+        digitalWrite(M3,LOW);
+        delay(10000);
+        digitalWrite(M3,HIGH);
+
+        
+
+        break;
+      case '3':
+
+        lcd.setCursor(14, 0);
+        lcd.print(key);
+        digitalWrite(M4,LOW);
+        delay(10000);
+        digitalWrite(M4,HIGH);
+        
+        break;
+      case '4':
+        lcd.setCursor(14, 0);
+        lcd.print(key);
+        digitalWrite(M5,LOW);
+        delay(10000);
+        digitalWrite(M5,HIGH);
+        
+        break;
+      case '5':
+
+        lcd.setCursor(14, 0);
+        lcd.print(key);
+        
+        break;
+      case '6':
+
+        lcd.setCursor(14, 0);
+        lcd.print(key);
+        
+        break;
+      case '7':
+
+        lcd.setCursor(14, 0);
+        lcd.print(key);
+        
+        break;
+      case '8':
+        lcd.setCursor(14, 0);
+        lcd.print(key);
+        
+        break;
+      case '9':
+
+        lcd.setCursor(14, 0);
+        lcd.print(key);
+        
+        break;
+      case '0':
+
+        lcd.setCursor(14, 0);
+        lcd.print(key);
+       
+        break;
+    }
+    
+
+ // }
+
+}
