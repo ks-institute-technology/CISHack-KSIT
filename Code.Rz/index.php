@@ -31,7 +31,7 @@ include "Patient Login/register.php";
             <div class="col-md-6">
               <h2 class="display-2">Doctor</h2>
                 <div class="text-center col-12">
-                    <img src="image/Doctor.jpg" width="385" height="250" class="responsive" alt="Students">
+                    <img src="image/Doctor.png" width="600" class="responsive" alt="Students">
                 </div>
               <div class="form-row">
                 <div class="form-group col">
@@ -109,7 +109,7 @@ include "Patient Login/register.php";
             <div class="col-md-6">
               <h2 class="display-2">Patient</h2>
                 <div class="text-center col-12">
-                    <img src="image/patient.jpg"  width="462"  class="responsive" alt="Students">
+                    <img src="image/patient.jpg"  width="418"  class="responsive" alt="Students">
                 </div>
               <div class="form-row">
                 <div class="form-group col">

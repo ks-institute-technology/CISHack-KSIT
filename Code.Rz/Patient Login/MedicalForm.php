@@ -34,19 +34,11 @@ if(isset($_POST['submit'])){
     $insertQuery = "INSERT INTO `patient_details`(`Patient_ID`, `Name`, `Age`, `Gender`, `Blood Group`, `DOB`, `EMail`, `Nationality`, `Address`) VALUES ( '$PatientId', '$name', '$age', '$gender', '$blood', '$dob', '$email', '$nationality', '$prstAdd')";
 
     $query = mysqli_query($conn, $insertQuery);
-    if($query){
-        ?>
-            <script> confirm("~~~~~~~~~~~~ Thank You ~~~~~~~~~~~~\n Medical Profile updated successfully");
-            </script> 
-        <?php
-    }
-    else {
-        ?>
-            <script>confirm("Provide correct input");</script> 
-        <?php
-        header("location: MedicalForm.php");
-    }
-        header("location: HomePage.php");
+    ?>
+        <script> confirm("~~~~~~~~~~~~ Thank You ~~~~~~~~~~~~\n Medical Profile updated successfully");
+        </script> 
+    <?php
+    header("location: HomePage.php");
 
 }    
 ?>
@@ -113,7 +105,7 @@ if(isset($_POST['submit'])){
                         </a>
                         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                             <div class="sb-nav-link-icon"><i class="fas fa-tasks"></i></div>
-                            Patient Inforamtion
+                            Patient Information
                             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                         </a>
                         <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">

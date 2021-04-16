@@ -65,7 +65,7 @@ if(isset($_POST['find'])){
                     <a class="dropdown-item" href="#">Profile</a>
                     <a class="dropdown-item" href="#">Settings</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="logout.php">Logout</a>
+                    <a class="dropdown-item" href="../logout.php">Logout</a>
                 </div>
             </li>
         </ul>
@@ -92,7 +92,7 @@ if(isset($_POST['find'])){
                         </a>
                         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                             <div class="sb-nav-link-icon"><i class="fas fa-tasks"></i></div>
-                            Patient Inforamtion
+                            Patient Information
                             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                         </a>
                         <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
@@ -126,7 +126,7 @@ if(isset($_POST['find'])){
                 <div class="container-fluid">
                     <ol class="breadcrumb mb-4">
                         <li class="breadcrumb-item">Home</li>
-                        <li class="breadcrumb-item active">Search Medicine</li>
+                        <li class="breadcrumb-item active">Search a Medicine</li>
                     </ol> 
                     <div class="card mb-4">
                     <div class="card-body">
@@ -157,7 +157,7 @@ if(isset($_POST['find'])){
                             <hr>
                             <div class="row">
                                 <div class="col-md-5 col text-center">
-                                    <img src="<?php echo $result['File']; ?>" class="rounded" alt="<?php echo $result['MedicineName']; ?>">
+                                    <img src="<?php echo $result['File']; ?>" width="500" class="rounded" alt="<?php echo $result['MedicineName']; ?>">
                                 </div>
                                 <div class="col-md-7 col">
                                     <div class="accordion" id="accordionExample">
@@ -237,7 +237,7 @@ if(isset($_POST['find'])){
                                         <div class="row">
                                             <div class="form-group col-12"></div>
                                             <div class="form-group col-sm-4">
-                                                <a href="../ConsultDoctor.php" role="button" class="btn btn-primary btn-lg btn-block">Consult a Doctor</a>
+                                                <a href="../ConsultDoctor.php" role="button" class="btn btn-primary btn-lg btn-block">Talk to a Doctor</a>
                                             </div>
                                             <div class="form-group col-sm-4">
                                                 <a href="https://www.amazon.in/s?k=<?php echo $result['MedicineName']; ?>" role="button" class="btn btn-outline-success btn-lg btn-block">Order Online</a>
@@ -252,17 +252,17 @@ if(isset($_POST['find'])){
                         <div class=" text-center">
                             <?php if($oops){ unset($_SESSION['Oops']); ?>
                             <div class="col">
-                                <img src="../../../image/space.png" class="rounded" alt="Search">
+                                <img src="../../image/space.png" class="rounded" alt="Not Available">
                             </div>
                             <div class="col">
                                 <h2 class="display-4">WOOPS !! The Medicine doesn't seem to be here...</h2>
                             </div>
                             <?php } else { ?>
                             <div class="col">
-                                <h2 class="display-4">Search for medicine</h2>
+                                <h2 class="display-4">Search for a medicine</h2>
                             </div>
                             <div class="col">
-                            <img src="../../../image/Searching.png" class="rounded" alt="Search">
+                            <img src="../../image/Searching.png" class="rounded" alt="Search">
                             </div>
                             <?php } ?>
                         </div>

@@ -9,13 +9,6 @@ if(isset($_SESSION['PatientId']) != true)
 $id = trim($_SESSION['PatientId']);
 include "../config.php";
 
-if(isset($_GET['no'])){
-?>
-    <script> 
-        confirm("Please Consult a Doctor");
-    </script>
-<?php
-}
 ?>
 
 <!DOCTYPE html>
@@ -70,7 +63,7 @@ if(isset($_GET['no'])){
                             Home
                         </a>
                         <div class="sb-sidenav-menu-heading">Activity</div>
-                        <a href="#" class="nav-link">
+                        <a href="Alarm.php" class="nav-link">
                             <div class="sb-nav-link-icon"><i class="fas fa-envelope-open-text"></i></div>
                             Alarms and Reminders
                         </a>
@@ -80,7 +73,7 @@ if(isset($_GET['no'])){
                         </a>
                         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                             <div class="sb-nav-link-icon"><i class="fas fa-tasks"></i></div>
-                            Patient Inforamtion
+                            Patient Information
                             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                         </a>
                         <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
@@ -114,15 +107,15 @@ if(isset($_GET['no'])){
                         <li class="breadcrumb-item active">Home</li>
                     </ol> 
                     <div class="row">
-                        <div class="col-6">
-                            <div class="text-center float-left">
+                        <div class="col-5">
+                            <div class="float-left">
                                 <img src="../image/baymax.png"  width="575"  class="responsive" alt="Patients">
                             </div>
                         </div>
-                        <div class="col-6">
-                            <div class="card text-center">
+                        <div class="col-7">
+                            <div class="card  mb-4 text-center">
                                 <div class="card-header">
-                                    <h4>Hello I'm BAYMAX your personal medical assisstant</h4>
+                                    <h4>Hello, I'm BAYMAX your personal medical assisstant</h4>
                                 </div>
                                 <div class="card-body">
                                 <h5 class="card-title">Are you feeling well today?</h5>
@@ -149,7 +142,82 @@ if(isset($_GET['no'])){
                                         </div>
                                       </div>
                                     <div class="form-group col-sm-4">
-                                        <a href="HomePage.php?no=Bad" role="button" class="btn btn-outline-danger btn-lg btn-block">No</a>
+                                        <a href="HomePage.php" role="button" data-toggle="modal" data-target="#exampleModal1" class="btn btn-outline-danger btn-lg btn-block">No</a>
+                                        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModal1Label" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h5 class="modal-title" id="exampleModal1Label">Select any Following symptoms you have</h5>
+                                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                  </button>
+                                                </div>
+                                                <div class="accordion" id="accordionExample">
+                                                    <div class="card">
+                                                      <div class="card-header" id="symptomOne">
+                                                        <h2 class="mb-0">
+                                                          <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                            <strong>Common cold</strong>: muscle pain, cough, nasal congestion, head ache
+                                                          </button>
+                                                        </h2>
+                                                      </div>
+                                                  
+                                                      <div id="collapseOne" class="collapse show" aria-labelledby="symptomOne" data-parent="#accordionExample">
+                                                        <div class="card-body text-left">
+                                                          <b>Treatments:</b>
+                                                          <p>There's no cure for the common cold. Antibiotics are of no use against cold viruses and shouldn't be used unless there's a bacterial infection. Treatment is directed at relieving signs and symptoms.
+                                                          Most people recover on their own within two weeks. Over-the-counter products and home remedies can help control symptoms.</p>
+                                                          <b>Medications:</b>
+                                                          <p>Analgesic, nonsteroidal anti-inflammatory drugs, cough medicine</p>
+                                                          <b>Tips:</b>
+                                                          <p>Wash your hands often with soap and water.</p>
+                                                          <p>Avoid touching your eyes, nose, and mouth with unwashed hands.</p>
+                                                          <p>Stay away from people who are sick.</p>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="card">
+                                                      <div class="card-header" id="symptomTwo">
+                                                        <h2 class="mb-0">
+                                                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                            <strong>Conjuctivitis</strong>: itching, redness(eye), tearing, burning sensation (eye)
+                                                          </button>
+                                                        </h2>
+                                                      </div>
+                                                      <div id="collapseTwo" class="collapse" aria-labelledby="symptomTwo" data-parent="#accordionExample">
+                                                        <div class="card-body text-left">
+                                                            Treatments: </br>
+                                                            Medications:</br>
+                                                            Tips:
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="card">
+                                                      <div class="card-header" id="symptomThree">
+                                                        <h2 class="mb-0">
+                                                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                            <strong>Injury</strong>: joint pain, swelling, limited range of movement, weakness
+                                                          </button>
+                                                        </h2>
+                                                      </div>
+                                                      <div id="collapseThree" class="collapse" aria-labelledby="symptomThree" data-parent="#accordionExample">
+                                                        <div class="card-body text-left">
+                                                            <b>Treatments:</b></br>
+                                                            <b>Medications:</b></br>
+                                                            <b>Tips:</b>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div><h4>If the above symptoms are not matched, Please Consult a Doctor</h4></div>
+                                                
+                                                <div class="modal-footer">
+                                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Not now</button>
+                                                  <a href="ConsultDoctor.php" role="button" class="btn btn-primary">Consult</a>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
                                     </div>
                                 </div> 
                                 </div>
@@ -157,13 +225,16 @@ if(isset($_GET['no'])){
                                 Last Response 6 days ago
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card mb-4">
                                 <div class="card-header">
-                                    <h5>Random Health Facts</h5>
+                                    <h5>Random Health Fact</h5>
                                 </div>
                                 <div class="card-body">
                                 Laughing 100 times is equivalent to 15 minutes of exercise on a stationary bike.
                                 </div>
+                            </div>
+                            <div class="text-center  mb-4">
+                                <img src="../image/students.png"   class="responsive" alt="Patients">
                             </div>
                         </div>
                     </div>

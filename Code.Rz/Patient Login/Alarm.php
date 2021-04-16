@@ -8,9 +8,14 @@ if(isset($_SESSION['PatientId']) != true)
 }
 $id = trim($_SESSION['PatientId']);
 include "../config.php";
-    $selectQuery = "SELECT * FROM `patient_details` WHERE `Patient_ID` = '$id'";
-    $query = mysqli_query($conn, $selectQuery);
-    $result = mysqli_fetch_assoc($query);
+
+if(isset($_GET['no'])){
+?>
+    <script> 
+        confirm("Please Consult a Doctor");
+    </script>
+<?php
+}
 ?>
 
 <!DOCTYPE html>
@@ -65,7 +70,7 @@ include "../config.php";
                             Home
                         </a>
                         <div class="sb-sidenav-menu-heading">Activity</div>
-                        <a href="#" class="nav-link">
+                        <a href="Alarm.php" class="nav-link">
                             <div class="sb-nav-link-icon"><i class="fas fa-envelope-open-text"></i></div>
                             Alarms and Reminders
                         </a>
@@ -98,9 +103,7 @@ include "../config.php";
                 </div>
                 <div class="sb-sidenav-footer">
                     <div class="small">Logged in as:</div>
-                    <?php 
-                        // echo($result['Name']);
-                    ?>
+                        User
                 </div>
             </nav>
         </div>
@@ -110,76 +113,27 @@ include "../config.php";
                     <ol class="breadcrumb mb-4">
                         <li class="breadcrumb-item active">Home</li>
                     </ol> 
-                    <div class="card mb-4">
-                    <div class="card mb-4">
-                        <div class="card-header">
-                            <h4 class="display-4"><strong>Medical Profile</strong></h4>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="text-center float-left">
+                                <img src="../image/baymax.png"  width="575"  class="responsive" alt="Patients">
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-4 col text-center">
-                                    <img src="../image/Male2.jpg" alt="Student Image" style="width:300px; border-radius: 50%;">
-                                    
+                        <div class="col-6">
+                            <div class="card text-center">
+                                <div class="card-header">
+                                    <h4>Alarm</h4>
                                 </div>
-                                <div class="col-md col">
-                                    <div class="row">
-                                        <div class="table-responsive col-6">
-                                            <table class="table table-borderless">
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Patient ID </td><td><?php echo ":\t".$result['Patient_ID']; ?></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Name </td><td><?php echo ":\t".$result['Name']; ?></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Age</td><td><?php echo ":\t".$result['Age']; ?></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Gender</td><td><?php echo ":\t".$result['Gender']; ?></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Blood Group </td><td><?php echo ":\t".$result['Blood Group']; ?></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Date Of Birth </td><td><?php echo ":\t".$result['DOB']; ?></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>E-mail</td> <td><?php echo ":\t".$result['EMail']; ?></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Nationality </td><td><?php echo ":\t".$result['Nationality']; ?></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Address</td><td><?php echo ":\t".$result['Address']; ?></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="table-responsive col-6">
-                                            <table class="table table-borderless">
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Time Of  Addmission</td><td><?php echo ":\t9:04AM / April 16th, 2021"; ?></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Medical History</td><td><?php echo ":\tType 2 Diabetes Mellitus"; ?></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Medications</td><td><?php echo ":\tLinagliptin(5mg), Losartan(10mg)"; ?></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Allergies</td><td><?php echo ":\tPenicillin Allergy"; ?></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Injuries and Accedents</td><td><?php echo ":\tNone"; ?></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Special Needs</td><td><?php echo ":\tNone"; ?></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
+                                <div class="card-body">
+                                    yet to be implemented.
+                                </div> 
+                                </div>
+                                <div class="card text-center">
+                                    <div class="card-header">
+                                        <h4>Reminders</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        yet to be implemented.
                                     </div>
                                 </div>
                             </div>
