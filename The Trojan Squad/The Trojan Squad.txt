@@ -1,0 +1,27 @@
+INCUBATE-IND
+Code Innovation Series - K. S. INSTITUTE OF TECHNOLOGY
+TEAM NAME:  The Trojan Squad
+
+TEAM MEMBERS:	Ashwini J
+			Kruthika S Vasisht
+			Nikitha M
+			Srividya H.R.
+IDEA BRIEF:
+
+Our idea is to develop a patient-centered information exchange system which provides a systematic storage for patient medical information, which is easily accessible to patients and doctors. This application has three users namely, Patients,Doctors/Experts and Hospital Administration. Patients can view their medical records while doctors can view and update/modify the patient's medical records.Doctors who also work as experts can chat with the patients and provide necessary services/suggestions considering the symptoms mentioned by the patients. 
+
+TECH STACK:
+
+HTML5, CSS3, Bootstrap v4.5 , JavaScript, PHP, Python, MySQL, XAMPP, Visual studio code, Atom
+
+POSITIVE AND UNIQUE SOLUTIONS:
+
+●	This web application gives an option to the patients to upload/update their basic test results such as BP, Sugar level, Pulse rate, Oxygen Saturation level, etc.
+●	Patients can also chat with experts (experts are none other than specialised doctors working in various hospitals) for consultations in the provided chatroom.
+●	The doctors can view details of the patients along with their medical records based on which  the doctor can suggest a diet chart.
+●	The hospital administration can view , access and update patient records by adding/removing reports on latest developments in patient’s health as suggested by the doctor.
+●	The progress in health (w.r.t Basic test results such as BP, sugar rate, pulse rate, O2 saturation rate, etc) of the patients will be represented in the form of graphs.
+
+WAYS TO HOST OUR PROJECT ON LOCALHOST:
+●	XAMPP
+●	LIVE SERVER AND PHP SERVER (Extensions) ON VISUAL STUDIO CODE.
