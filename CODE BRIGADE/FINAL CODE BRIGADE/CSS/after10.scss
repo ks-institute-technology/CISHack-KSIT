@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: cornsilk;
+}
+.container {
+    
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+}
+.nav-bar a {
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+    background: yellow;
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    width: fit-content;
+    transition-duration: .9s;
+}
+.nav-bar a:hover {
+    background: black;
+    color: yellow;
+    box-shadow: 2px 2px 7px white;
+}
+img {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    margin-left: 30px;
+    border: none;
+    border-radius: 40%;
+}
+.nav-bar {
+    display: flex;
+    background: black;
+    position: fixed;
+    width: 100vw;
+    z-index: 343;
+    opacity: 0.85;
+    top: 0;
+}
+.right-nav {
+    height: 50px;
+    margin-top: 35px;
+    margin-left: 650px;
+}
+.main_body {
+    position: relative;
+    top: 130px;
+    margin: 30px; 
+    //outline: 2px solid;
+    padding: 20px;
+    //background-color: lightblue;
+}
+.main_body .general {
+    //outline: 2px solid yellow;
+    padding: 20px;
+    background: yellow;
+    border-radius: 20px;
+    box-shadow: 0 0 10px;
+}
+.main_body .general p {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+// .main_body .sub_courses, .sub_courses div {
+//     display: inline-block;
+//     margin-top: 10px;
+// }
+// .sub_courses img {
+//     height: 200px;
+//     width: 200px;
+//     border-radius: none;
+// }
+// .science * {
+//     outline: 2px solid;
+// }
+// .science {
+//     outline: 2px solid;
+//     display: inline-flex;
+// }
+.sub_courses {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    background-color: cornsilk;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    //box-shadow: 0 0 10px;
+}
+.sub_courses ul {
+    list-style: none;
+}
+.sub_courses ul li {
+    line-height: 50px;
+}
+.sub_courses ul li a {
+    text-decoration: none;
+    color: black;
+}
+button {
+    border: none;
+    padding: 10px;
+}
+button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: yellow;
+}
+button:active {
+    border: none;
+}
+.sub_courses * {
+    background: rgb(250, 236, 41);
+    border-radius: 20px;
+}
+.science, .commerce, .iti, .arts, .paramedical-courses, .dip {
+    margin: 20px;
+    display: flex;
+    background-color: rgb(63, 62, 62);
+    width: 536px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    position: relative;
+}
+.right, .left, .top, .bottom {
+    display: inline-block;
+    text-align: center;
+}
+.bottom p {
+    background: yellow;
+}
+.sub_courses img {
+    width: 200px;
+    height: 200px;
+}
+.sub_courses h3 {
+    margin-bottom: 50px;
+}
+.left {
+    margin-right: 30px;
+    position: relative;
+    top: 100px;
+    height: fit-content;
+    padding: 20px;
+    z-index: 10;
+}
+.left * {
+    font-size: 25px;
+    text-align: center;
+}
+.right {
+    padding: 10px;
+    text-align: center;
+}
+.bottom p {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: sans-serif;
+    box-shadow: 0 0 10px;
+}
+i {
+    display: inline-block;
+    color: black;
+}
+.totop {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    z-index: 12;
+    top: 550px;
+    left: 1200px;
+    background-color: rgba(255,255,255,.5);
+    padding: 20px;
+}
+.arts, .dip, .iti {
+    height: 420px;
+}
+.paramedical-courses .left {
+    width: 250px;
+}
+// .dip .left a {
+//     font-size: 10px;
+// }
+// .dip .left li {
+//     line-height: 20px;
+// }
+// .paramedical-courses .left li:nth-child(2) a{
+//     font-size: 15px;
+//     font-weight: bolder;
+// }
+.iti h3 {
+    margin-bottom: 30px;
+}
