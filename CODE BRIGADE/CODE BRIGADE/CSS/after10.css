@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: cornsilk;
+}
+
+.nav-bar ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-bar a {
+  color: black;
+  text-decoration: none;
+  font-family: sans-serif;
+  background: yellow;
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-transition-duration: .9s;
+          transition-duration: .9s;
+}
+
+.nav-bar a:hover {
+  background: black;
+  color: yellow;
+  -webkit-box-shadow: 2px 2px 7px white;
+          box-shadow: 2px 2px 7px white;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  margin-left: 30px;
+  border: none;
+  border-radius: 40%;
+}
+
+.nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: black;
+  position: fixed;
+  width: 100vw;
+  z-index: 343;
+  opacity: 0.85;
+  top: 0;
+}
+
+.right-nav {
+  height: 50px;
+  margin-top: 35px;
+  margin-left: 650px;
+}
+
+.main_body {
+  position: relative;
+  top: 130px;
+  margin: 30px;
+  padding: 20px;
+}
+
+.main_body .general {
+  padding: 20px;
+  background: yellow;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 10px;
+          box-shadow: 0 0 10px;
+}
+
+.main_body .general p {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.sub_courses {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 10px;
+  background-color: cornsilk;
+  border: none;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.sub_courses ul {
+  list-style: none;
+}
+
+.sub_courses ul li {
+  line-height: 50px;
+}
+
+.sub_courses ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  border: none;
+  padding: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: yellow;
+}
+
+button:active {
+  border: none;
+}
+
+.sub_courses * {
+  background: #faec29;
+  border-radius: 20px;
+}
+
+.science, .commerce, .iti, .arts, .paramedical-courses, .dip {
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #3f3e3e;
+  width: 536px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  position: relative;
+}
+
+.right, .left, .top, .bottom {
+  display: inline-block;
+  text-align: center;
+}
+
+.bottom p {
+  background: yellow;
+}
+
+.sub_courses img {
+  width: 200px;
+  height: 200px;
+}
+
+.sub_courses h3 {
+  margin-bottom: 50px;
+}
+
+.left {
+  margin-right: 30px;
+  position: relative;
+  top: 100px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 20px;
+  z-index: 10;
+}
+
+.left * {
+  font-size: 25px;
+  text-align: center;
+}
+
+.right {
+  padding: 10px;
+  text-align: center;
+}
+
+.bottom p {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: sans-serif;
+  -webkit-box-shadow: 0 0 10px;
+          box-shadow: 0 0 10px;
+}
+
+i {
+  display: inline-block;
+  color: black;
+}
+
+.totop {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  z-index: 12;
+  top: 550px;
+  left: 1200px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+}
+
+.arts, .dip, .iti {
+  height: 420px;
+}
+
+.paramedical-courses .left {
+  width: 250px;
+}
+
+.iti h3 {
+  margin-bottom: 30px;
+}
+/*# sourceMappingURL=after10.css.map */
