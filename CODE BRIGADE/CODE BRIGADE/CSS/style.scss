@@ -111,7 +111,7 @@ body {
 
 .after10 {
     padding: 20px;
-    background: url('/Resources/10th.jpg');
+    background: url('./Resources/10th.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     margin: 10px;
@@ -127,7 +127,7 @@ body {
 }
 .Courses .after10:nth-child(2)
 {
-    background: url('/Resources/12th.jpg');
+    background: url('./Resources/12th.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
