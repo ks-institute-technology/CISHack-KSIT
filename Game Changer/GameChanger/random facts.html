@@ -1,0 +1,59 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body style="background-color: #ffffcc; margin: 30px 70px;padding: 0;">
+        <h2><i><u>Amazing Facts</u></i></h2>
+        
+        <form class="search" action="">
+            
+            
+            <button type="submit" class="btn btn-secondary" style="margin:0 45%;">Amaze Yourself !!</button>
+        </form>
+    
+       <p id="output" style="font-size: x-large;"></p>
+       <p id="output2" style="font-size: xx-large; font-weight: bold;"></p>
+    
+        <script>
+            const search = document.querySelector('.search');
+            
+            const newsList = document.querySelector('.news-list');
+            console.log(search);
+    
+            search.addEventListener('submit', retrieve)
+    
+            function retrieve(e){
+    
+                e.preventDefault();
+                
+                fetch("https://numbersapi.p.rapidapi.com/random/trivia?max=20&fragment=true&min=10&json=true", {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-key": "abbe40cc46msh2f359e077ddb8e4p1c35cbjsn93133bd22b12",
+		"x-rapidapi-host": "numbersapi.p.rapidapi.com"
+	}
+})
+.then(response => {
+    return response.json();
+	console.log(response);
+}).then((data)=>{
+    console.log(data)
+    let a = data.text;
+    document.getElementById("output").innerHTML= a;
+    document.getElementById("output2").innerHTML=data.number;
+
+})
+.catch(err => {
+	console.error(err);
+});
+    
+            }
+           
+        </script>
+    </body>
+    </html>
+    
